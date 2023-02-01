@@ -1,0 +1,57 @@
+{
+  "name": "vite-library-strict-mode",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "author": "J.K. Lover",
+  "type": "module",
+  "description": "Vite Template in Library Mode: JavaScript / TypeScript + Unit Tests + Linter + Formatter + Commit Lint + Git Hooks + ...",
+  "keywords": [
+    "vite",
+    "vitejs",
+    "vitest",
+    "template"
+  ],
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "main": "./dist/yolo.js",
+  "module": "./dist/yolo.js",
+  "types": "./index.d.ts",
+  "exports": {
+    "types": "./index.d.ts",
+    "import": "./dist/yolo.js"
+  },
+  "scripts": {
+    "dev": "vite",
+    "test": "vitest",
+    "unit": "vitest -w=false",
+    "build": "tsc && vite build",
+    "commit": "npx cz",
+    "format": "prettier . --write --parser typescript \"**/*.[tj]s?(x)\"",
+    "lint": "eslint --ext .ts {src,__tests__}/**.ts",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "postinstall": "simple-git-hooks",
+    "release": "standard-version"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
+    "commitizen": "^4.3.0",
+    "conventional-changelog-cli": "^2.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.3",
+    "simple-git-hooks": "^2.8.1",
+    "standard-version": "^9.5.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.0.4",
+    "vitest": "^0.28.3"
+  }
+}

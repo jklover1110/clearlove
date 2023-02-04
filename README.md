@@ -1,15 +1,11 @@
-# Vite-Library-Strict-Mode
+# ESNext Promise
 
-Vite Template in Library Mode: JavaScript / TypeScript + Unit Tests + Linters + Formatters + Commit Lint + Git Hooks + ...
+<p align='center'>Next Generation ECMAScript Promise Objects</p>
 
-## Integrated Features
+<br>
 
-- [x] Vite Library Mode
-- [x] Commit Lint - Conventional Commit
-- [x] Change Log - Conventional Change Log
-- [x] Vitest - Blazing Fast Vite-native Unit Test Framework
-- [x] Prettier - Opinionated Code Formatter
-- [x] ESLint - Pluggable JavaScript Linter
-- [x] simple-git-hooks - DIY Git Hooks
-- [x] lint-staged - Lint Staged Files
-- [x] standard-version - Semantic Versioning
+<p align='center'>
+  English | <a href='./README.zh-CN.md'>简体中文</a>
+</p>
+
+ESNext Promise, AKA "Post-ES6-era Promise", is based on ECMAScript Language Specification(AKA ECMA-262 Standards) & Promises/A+ Specification.

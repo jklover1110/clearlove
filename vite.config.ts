@@ -14,7 +14,7 @@ export default defineConfig({
     lib: {
       entry: './src/index.ts',
       formats: ['es'],
-      fileName: 'yolo' /* DIY library name as you wish  */
+      fileName: 'esn-promise' /* DIY library name as you wish  */
     }
   }
 })

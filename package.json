@@ -1,27 +1,28 @@
 {
-  "name": "vite-library-strict-mode",
+  "name": "esn-promise",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
   "author": "J.K. Lover",
   "type": "module",
-  "description": "Vite Template in Library Mode: JavaScript / TypeScript + Unit Tests + Linter + Formatter + Commit Lint + Git Hooks + ...",
+  "description": "ESNext Promise, AKA 'Post-ES6-era Promise', is based on ECMAScript Language Specification(AKA ECMA-262 Standards) & Promises/A+ Specification.",
   "keywords": [
-    "vite",
-    "vitejs",
-    "vitest",
-    "template"
+    "promise",
+    "promises-aplus",
+    "ECMAScript Promise Objects",
+    "ESNext Promise Objects",
+    "esn-promise"
   ],
   "files": [
     "dist",
     "index.d.ts"
   ],
-  "main": "./dist/yolo.js",
-  "module": "./dist/yolo.js",
+  "main": "./dist/esn-promise.js",
+  "module": "./dist/esn-promise.js",
   "types": "./index.d.ts",
   "exports": {
     "types": "./index.d.ts",
-    "import": "./dist/yolo.js"
+    "import": "./dist/esn-promise.js"
   },
   "scripts": {
     "dev": "vite",

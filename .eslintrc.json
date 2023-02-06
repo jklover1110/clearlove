@@ -5,12 +5,21 @@
     "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
-  "parser": "@typescript-eslint/parser",
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
+    "requireConfigFile": true,
+    "babelOptions": {
+      "babelrc": false,
+      "configFile": true
+    },
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "prettier"],
+  "plugins": [
+    "@babel",
+    "@typescript-eslint",
+    "prettier"
+  ],
   "root": true,
   "env": {
     "browser": true,

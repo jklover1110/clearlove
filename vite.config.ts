@@ -23,7 +23,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: {
-        'esn-promise': resolve(__dirname, 'src/main.ts')
+        'esn-promise': resolve(__dirname, 'src/index.ts')
       },
       formats: ['es'],
       fileName: (_, entryName) => `${entryName}.js`

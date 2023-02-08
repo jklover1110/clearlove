@@ -21,3 +21,21 @@ ESNext Promise，亦称“后 ES6 时代的 `Promise`”，基于 ECMAScript 语
 - [ ] Properties of the Promise Prototype Object(`Promise` 原型属性)
   - [x] Promise.prototype.then(onFulfilled, onRejected)
 - [x] Properties of Promise Instances(`Promise` 实例属性)
+
+## How to run unit tests
+
+```bash
+# step1: 克隆仓库
+git clone https://github.com/jklover1110/esn-promise.git
+
+# step 2: 安装第三方依赖模块
+npm i -g pnpm
+pnpm install
+
+# step 3: 运行单元测试
+pnpm test
+
+# step 4: 使用 Promises/A+ 兼容性测评全家桶
+pnpm aplus
+
+```

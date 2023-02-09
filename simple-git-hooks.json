@@ -1,4 +1,4 @@
 {
-  "pre-commit": "pnpm vitest -w false && pnpm aplus",
+  "pre-commit": "pnpm vitest -w false && pnpm aplus && pnpm lint-staged",
   "commit-msg": "pnpm commitlint --edit ${1}"
 }

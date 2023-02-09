@@ -31,6 +31,7 @@
     "aplus": "pnpm build && babel-node __tests__/aplus.tests.js",
     "build": "vite build",
     "commit": "pnpm cz",
+    "lint": "eslint --ext .ts {src,__tests__}/**.ts",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "postinstall": "simple-git-hooks",
     "release": "standard-version"

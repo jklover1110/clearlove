@@ -1,6 +1,7 @@
 import { suite, it, expect } from 'vitest'
 import { Promise } from '@/index'
-import { call, NOOP } from '@/toolman'
+import { call } from '@/abstract-operations'
+import { NOOP } from '@/toolman'
 
 suite('If NewTarget is undefined, throw a TypeError exception.', () => {
   it('', () => expect(1).toBe(1))

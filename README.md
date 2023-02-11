@@ -18,9 +18,27 @@ ESNext Promise, AKA "Post-ES6-era Promise", is based on ECMAScript Language Spec
 
 - [x] The Promise Constructor
   - [x] Promise(executor)
+- [ ] Properties of the Promise Constructor
+  - [ ] Promise.all(iterable)
+  - [ ] Promise.allSettled(iterable)
+  - [ ] Promise.any(iterable)
+  - [x] Promise.prototype
+  - [ ] Promise.race(iterable)
+  - [ ] Promise.reject(r)
+  - [ ] Promise.resolve(x)
+  - [ ] get Promise[@@species]
 - [ ] Properties of the Promise Prototype Object
+  - [ ] Promise.prototype.catch(onRejected)
+  - [x] Promise.prototype.constructor
+  - [ ] Promise.prototype.finally(onFinally)
   - [x] Promise.prototype.then(onFulfilled, onRejected)
+  - [ ] Promise.prototype[@@toStringTag]
 - [x] Properties of Promise Instances
+  - [x] [[PromiseState]]
+  - [x] [[PromiseResult]]
+  - [x] [[PromiseFulfillReactions]]
+  - [x] [[PromiseRejectReactions]]
+  - [x] [[PromiseIsHandled]]
 
 ## How to run unit tests
 

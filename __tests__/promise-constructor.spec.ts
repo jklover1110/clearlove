@@ -34,7 +34,6 @@ suite('Promise Abstract Operations', () => {
     })
 
     it('then is an abrupt completion', async () => {
-      /* refactor */
       const thenable = {
         get then() {
           throw Error()

@@ -1,5 +1,5 @@
 import { isCallable } from './is-callable'
-import { ARRAY, CONSTRUCTOR } from '@/toolman/constants'
+import { ARRAY, CONSTRUCTOR } from '@/toolman'
 
 const isConstructor = (argument: any) => {
   if (!isCallable(argument)) return false

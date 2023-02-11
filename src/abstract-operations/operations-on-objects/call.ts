@@ -1,8 +1,11 @@
-import { ARRAY } from '@/toolman/constants'
+import { ARRAY } from '@/toolman'
 import { isCallable } from '../testing-and-comparison-operations/is-callable'
 
-/* refactor */
-const call = (f: Function, v: any, argumentsList = ARRAY) => {
+const call = <T>(
+  f: (...args: T[]) => any,
+  v: ThisParameterType<typeof f>,
+  argumentsList: T[] = ARRAY
+) => {
   if (!isCallable(f)) throw TypeError()
 
   return Reflect.apply(f, v, argumentsList)

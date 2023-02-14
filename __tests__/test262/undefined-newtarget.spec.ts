@@ -10,10 +10,10 @@ suite('If NewTarget is undefined, throw a TypeError exception.', () => {
   })
 
   it('Call Promise as a function, throw a TypeError exception.', () => {
-    expect(() => call(Promise, null, NOOP)).toThrow()
+    expect(() => call(Promise, null, [NOOP])).toThrow()
   })
 
   it('Call Promise as a method, throw a TypeError exception.', () => {
-    expect(() => call(Promise, new Promise(NOOP as any), NOOP)).toThrow()
+    expect(() => call(Promise, new Promise(NOOP as any), [NOOP])).toThrow()
   })
 })

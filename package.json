@@ -12,7 +12,8 @@
     "ESNext Promise Objects",
     "esn-promise",
     "Promises/A+",
-    "promises-aplus"
+    "promises-aplus",
+    "promises-aplus-tests"
   ],
   "files": [
     "dist",
@@ -28,7 +29,8 @@
   "scripts": {
     "dev": "vitest --ui",
     "test": "vitest",
-    "build": "vite build",
+    "aplus": "tsx __tests__/adapter",
+    "build": "tsc && vite build",
     "commit": "pnpm cz",
     "lint": "eslint --ext .ts {src,__tests__}/**.ts",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
@@ -38,7 +40,6 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
-    "@types/node": "^18.13.0",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
     "@vitest/ui": "^0.28.4",
@@ -53,7 +54,7 @@
     "promises-aplus-tests": "^2.1.2",
     "simple-git-hooks": "^2.8.1",
     "standard-version": "^9.5.0",
-    "ts-node": "^10.9.1",
+    "tsx": "^3.12.3",
     "typescript": "^4.9.5",
     "vite": "^4.1.1",
     "vitest": "^0.28.4"

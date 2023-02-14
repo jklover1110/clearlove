@@ -1,5 +1,5 @@
 import test from 'promises-aplus-tests'
-import Promise from '../dist/esn-promise.js'
+import Promise from '@/index'
 
 const value = function () {
   const deferred = Object.create(null)
@@ -13,9 +13,7 @@ const value = function () {
 }
 
 Reflect.defineProperty(Promise, 'deferred', {
-  value,
-  configurable: true,
-  writable: true
+  value
 })
 
 test(Promise, console.log)

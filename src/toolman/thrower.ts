@@ -1,4 +1,3 @@
-const thrower = (e: any) => {
+export default (e: any) => {
   throw e
 }
-export { thrower as default, thrower }

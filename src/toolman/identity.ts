@@ -1,3 +1,1 @@
-const identity = <T>(_: T) => _
-
-export { identity as default, identity }
+export default <T>(_: T) => _

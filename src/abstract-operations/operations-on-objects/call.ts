@@ -1,7 +1,7 @@
 import { ARRAY } from '@/toolman'
-import { isCallable } from '../testing-and-comparison-operations/is-callable'
+import { isCallable } from '../testing-and-comparison-operations'
 
-const call = <T>(
+export default <T>(
   f: (...args: T[]) => any,
   v: ThisParameterType<typeof f>,
   argumentsList: T[] = ARRAY
@@ -10,5 +10,3 @@ const call = <T>(
 
   return Reflect.apply(f, v, argumentsList)
 }
-
-export { call as default, call }

@@ -1,7 +1,7 @@
-import { isCallable } from './is-callable'
+import { isCallable } from './index'
 import { ARRAY, CONSTRUCTOR } from '@/toolman'
 
-const isConstructor = (argument: any) => {
+export default (argument: any) => {
   if (!isCallable(argument)) return false
 
   try {
@@ -10,4 +10,3 @@ const isConstructor = (argument: any) => {
     return false
   }
 }
-export { isConstructor as default, isConstructor }

@@ -1,3 +1,1 @@
-const isCallable = (argument: any) => typeof argument === 'function'
-
-export { isCallable as default, isCallable }
+export default (argument: any) => typeof argument === 'function'

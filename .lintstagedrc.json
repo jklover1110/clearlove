@@ -1,3 +1,4 @@
 {
+  "*.json": ["prettier -w"],
   "*.ts": ["eslint", "prettier -w"]
 }

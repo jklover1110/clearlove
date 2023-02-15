@@ -27,7 +27,7 @@
     "import": "./dist/esn-promise.js"
   },
   "scripts": {
-    "dev": "vitest --ui",
+    "start": "vitest --ui",
     "test": "vitest",
     "aplus": "tsx __tests__/adapter",
     "build": "tsc && vite build",

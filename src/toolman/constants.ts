@@ -2,6 +2,6 @@ const VOID = void 0
 const ARRAY = Array.prototype
 const NOOP = Function.prototype
 const CONSTRUCTOR = function constructor() {} // eslint-disable-line @typescript-eslint/no-empty-function
-const alreadyResolved = Symbol('alreadyResolved')
+const ALREADY_RESOLVED = Symbol('alreadyResolved')
 
-export { VOID, ARRAY, CONSTRUCTOR, NOOP, alreadyResolved }
+export { VOID, ARRAY, CONSTRUCTOR, NOOP, ALREADY_RESOLVED }

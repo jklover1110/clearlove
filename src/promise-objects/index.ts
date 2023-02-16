@@ -1,4 +1,10 @@
-import { VOID, isObject, identity, thrower, alreadyResolved } from '@/toolman'
+import {
+  VOID,
+  isOrdinaryObject,
+  identity,
+  thrower,
+  ALREADY_RESOLVED
+} from '@/toolman'
 import { call, isCallable } from '@/abstract-operations'
 import { enqueueJob } from '@/next-tick'
 
@@ -68,7 +74,7 @@ class Promise<T> {
         if (resolution === (this as unknown as Thenable<T>))
           return reject(TypeError('selfResolutionError'))
 
-        if (!isObject(resolution)) return fulfill(resolution)
+        if (!isOrdinaryObject(resolution)) return fulfill(resolution)
 
         try {
           const thenAction = resolution.then
@@ -89,13 +95,13 @@ class Promise<T> {
       }
       const zeroSum: {
         (resolvingFunction: any): (...result: any[]) => void
-        [alreadyResolved]?: boolean
+        [ALREADY_RESOLVED]?: boolean
       } =
         resolvingFunction =>
         (...result) => {
-          if (zeroSum[alreadyResolved]) return
+          if (zeroSum[ALREADY_RESOLVED]) return
 
-          zeroSum[alreadyResolved] = true
+          zeroSum[ALREADY_RESOLVED] = true
           call(resolvingFunction, VOID, result)
         }
 

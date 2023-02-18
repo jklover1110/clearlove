@@ -28,7 +28,7 @@ ESNext Promise，亦称“后 ES6 时代的 `Promise`”，基于 ECMAScript 语
   - [ ] Promise.resolve(x)
   - [ ] get Promise[@@species]
 - [ ] Properties of the Promise Prototype Object(`Promise` 原型属性)
-  - [ ] Promise.prototype.catch(onRejected)
+  - [x] Promise.prototype.catch(onRejected)
   - [x] Promise.prototype.constructor
   - [ ] Promise.prototype.finally(onFinally)
   - [x] Promise.prototype.then(onFulfilled, onRejected)

@@ -1,1 +1,5 @@
 export { default as call } from './call'
+export { default as invoke } from './invoke'
+export { default as getV } from './get-v'
+export { default as get } from './get'
+export { default as toObject } from './to-object'

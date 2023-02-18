@@ -3,9 +3,10 @@ import {
   isOrdinaryObject,
   identity,
   thrower,
-  ALREADY_RESOLVED
+  ALREADY_RESOLVED,
+  THEN
 } from '@/toolman'
-import { call, isCallable } from '@/abstract-operations'
+import { call, isCallable, invoke, get } from '@/abstract-operations'
 import { enqueueJob } from '@/next-tick'
 
 type Optional<T> = T | undefined
@@ -77,7 +78,7 @@ class Promise<T> {
         if (!isOrdinaryObject(resolution)) return fulfill(resolution)
 
         try {
-          const thenAction = resolution.then
+          const thenAction = get(resolution, THEN)
           if (!isCallable(thenAction)) return fulfill(resolution)
 
           enqueueJob(() => {
@@ -149,6 +150,10 @@ class Promise<T> {
         ]).get(this.#state)(this.#result)
       }
     )
+  }
+
+  catch(onRejected: (reason?: any) => any) {
+    return invoke(this, THEN, [VOID, onRejected])
   }
 }
 

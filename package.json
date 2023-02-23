@@ -1,5 +1,5 @@
 {
-  "name": "esn-promise",
+  "name": "clearlove",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
@@ -8,28 +8,27 @@
   "description": "Next Generation ECMAScript Promise Objects, AKA \"Post-ES6-era Promise\", is based on ECMAScript Language Specification(AKA ECMA-262 Standards) & Promises/A+ Specification.",
   "keywords": [
     "Promise",
-    "ECMAScript Promise Objects",
-    "ESNext Promise Objects",
-    "esn-promise",
+    "Next Generation ECMAScript Promise Objects",
     "Promises/A+",
     "promises-aplus",
-    "promises-aplus-tests"
+    "promises-aplus-tests",
+    "promises-es6-tests"
   ],
   "files": [
     "dist",
     "index.d.ts"
   ],
-  "main": "./dist/esn-promise.js",
-  "module": "./dist/esn-promise.js",
+  "main": "./dist/clearlove.js",
+  "module": "./dist/clearlove.js",
   "types": "./index.d.ts",
   "exports": {
     "types": "./index.d.ts",
-    "import": "./dist/esn-promise.js"
+    "import": "./dist/clearlove.js"
   },
   "scripts": {
     "start": "vitest --ui",
     "test": "vitest",
-    "aplus": "tsx __tests__/adapter",
+    "tests": "tsx __tests__/adapter",
     "build": "tsc && vite build",
     "commit": "pnpm cz",
     "lint": "eslint --ext .ts {src,__tests__}/**.ts",

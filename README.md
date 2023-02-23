@@ -1,4 +1,4 @@
-# ESNext Promise
+# CLEARLOVE
 
 <p align='center'>Next Generation ECMAScript Promise Objects</p>
 
@@ -10,11 +10,12 @@
 
 ## Intro
 
-ESNext Promise, AKA "Post-ES6-era Promise", is based on ECMAScript Language Specification(AKA ECMA-262 Standards) & Promises/A+ Specification.
+Clearlove are Next Generation ECMAScript Promise Objects, AKA "Post-ES6-era Promise", is based on ECMAScript Language Specification(AKA ECMA-262 Standards) & Promises/A+ Specification.
 
 ## TDD(Test-Driven Development)
 
 - [x] Promises/A+ Compliance Test Suite
+- [ ] ECMAScript6 Promises Test Suite
 
 ## Promise Objects
 
@@ -46,16 +47,16 @@ ESNext Promise, AKA "Post-ES6-era Promise", is based on ECMAScript Language Spec
 
 ```bash
 # step1: clone the repo
-git clone https://github.com/jklover1110/esn-promise.git
+git clone https://github.com/jklover1110/clearlove.git
 
-# step 2: install 3rd-party node modules
+# step2: install 3rd-party node modules
 npm i -g pnpm
 pnpm install
 
-# step 3: run unit tests
+# step3: run unit tests
 pnpm test
 
-# step 4: use Promises/A+ compliance test suite
-pnpm aplus
+# step4: use Promises/A+ compliance test suite & ECMAScript6 Promises Test Suite
+pnpm tests
 
 ```

@@ -13,7 +13,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: {
-        'esn-promise': resolve(__dirname, 'src/index.ts')
+        clearlove: resolve(__dirname, 'src/index.ts')
       },
       formats: ['es'],
       fileName: (_, entryName) => `${entryName}.js`

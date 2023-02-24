@@ -57,6 +57,6 @@ pnpm install
 pnpm test
 
 # step4: use Promises/A+ compliance test suite & ECMAScript6 Promises Test Suite
-pnpm tests
+pnpm suites
 
 ```

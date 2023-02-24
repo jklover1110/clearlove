@@ -28,7 +28,7 @@
   "scripts": {
     "start": "vitest --ui",
     "test": "vitest",
-    "tests": "tsx __tests__/adapter",
+    "suites": "tsx __tests__/adapter",
     "build": "tsc && vite build",
     "commit": "pnpm cz",
     "lint": "eslint --ext .ts {src,__tests__}/**.ts",
